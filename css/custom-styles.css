@@ -1,0 +1,23 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* a tag styling with primary colour */
+.a-tag-pri a{
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
+}
+.a-tag-pri a:hover{
+    color: var(--primary-1);
+}

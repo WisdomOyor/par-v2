@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-styles.css" />
+    <link rel="icon" href="assets/IITA-logo-01.svg" />
+
+    <script>
+      // Function to update the greeting, time, and date
+      function updateHeroContent() {
+        const heroGreeting = document.querySelector(".hero-content-1 p");
+        const heroTime = document.querySelector(".hero-content-1 h2");
+        const heroDate = document.querySelector(".hero-content-1 p:nth-child(3)");
+
+        const currentTime = new Date();
+        const hours = currentTime.getHours();
+        const minutes = currentTime.getMinutes();
+        const formattedTime = currentTime.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+        const formattedDate = currentTime.toLocaleDateString([], { weekday: "long", month: "long", day: "numeric" });
+
+        // Update the greeting based on the time of day
+        let greeting;
+        if (hours < 12) {
+          greeting = "Good morning, Patrick";
+        } else if (hours < 17) {
+          greeting = "Good afternoon, Patrick";
+        } else {
+          greeting = "Good evening, Patrick";
+        }
+
+        heroGreeting.textContent = greeting;
+        heroTime.textContent = formattedTime;
+        heroDate.textContent = formattedDate;
+      }
+
+      // Call the function to update the hero content when the page loads
+      window.onload = updateHeroContent;
+
+      // Optionally, update the time every minute
+      setInterval(updateHeroContent, 60000);
+    </script>
+
+    <title>PAR Dashboard</title>
+  </head>
+  <body>
+    <!-- Main Content Area -->
+    <div class="main-content-area">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <ul class="appraisee">
+            <p>Appraisee Section</p>
+            <a href="#"><li>My Workplan</li></a>
+            <a href="#"><li>My Appraisals</li></a>
+            <a href="#"><li>View/Download my PDFs</li></a>
+            <a href="#"><li>Manage Achievements</li></a>
+          </ul>
+
+          <ul class="support">
+            <p>Support</p>
+            <a href="#"
+              ><li><i class="fa-sharp fa-regular fa-envelope"></i>Contact IT Support</li></a
+            >
+            <a href="#"
+              ><li><i class="fa-regular fa-circle-question"></i>FAQ's</li></a
+            >
+            <a href="#">
+              <li>
+                <div class="feedback-div">
+                  <i class="fa-regular fa-comment-dots"></i>Help us make PAR better
+                  <div class="feedback-image-div">
+                    <img src="assets/par-mockup-1.png" alt="PAR Mockup" />
+                    <p>Share your feedback</p>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="#"
+              ><li><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</li></a
+            >
+          </ul>
+
+          <div class="user-profile">
+            <!-- Placeholder: user info: image, name, category -->
+            <img src="assets/user-image.png" alt="" class="user-image" />
+            <div class="user-info">
+              <p class="user-name">ADEMOLA Patrick</p>
+              <p class="user-category">NRS Professional</p>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Content Area -->
+      <section class="content-area">
+        <!-- Header -->
+        <header class="header">
+          <img src="assets/PAR-logo.svg" alt="PAR Logo" class="par-logo" />
+          <nav class="header-nav">
+            <!-- Placeholder: ONLY the current page should have the class "active". -->
+            <a class="active" href="#"><p>Dashboard</p></a>
+            <a href="#"><p>Delegate</p></a>
+            <a href="#"><p>Bug</p></a>
+            <a href="#"><p>Help</p></a>
+          </nav>
+        </header>
+
+        <div class="content hero">
+          <!-- Placeholder: background-image -->
+          <div class="hero-content" style="background-image: url('/assets/hero-image.jpg')">
+            <div class="hero-content-1">
+              <!-- Placeholder: user-name -->
+              <p>Good morning, Patrick</p>
+              <h2>11:40 AM</h2>
+              <p>Tuesday, July 11</p>
+            </div>
+            <div class="hero-content-2"><i class="fa-regular fa-bell"></i>Your workplan is yet to be approved.</div>
+          </div>
+          <!-- Placeholder: message to display -->
+          <p class="announcement">Please take note: Database is refreshed every 24 hours. After updating your records in the other systems, the changes may not immediately display in this application.</p>
+        </div>
+
+        <div class="content">
+          <h2>I would like to...</h2>
+          <div class="actions">
+            <a href="">
+              <div>
+                <div class="icon-div flex-center"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+                <h4>Upload my Workplan</h4>
+                <p>Submit your workplan for review and appraisal.</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <div class="icon-div flex-center"><i class="fa-solid fa-file-pen"></i></div>
+                <h4>Manage my Appraisals</h4>
+                <p>Review and respond to your appraisals.</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <div class="icon-div flex-center"><i class="fa-solid fa-file-pdf"></i></div>
+                <h4>View or Download PDFs</h4>
+                <p>Access and download your performance documents.</p>
+              </div>
+            </a>
+            <a href="">
+              <div>
+                <div class="icon-div flex-center"><i class="fa-solid fa-list-check"></i></div>
+                <h4>Manage Achievements</h4>
+                <p>Update and track your performance achievements.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="content content-2">
+          <div class="border-bottom">
+            <p class="announcement a-tag-pri">
+              <img src="assets/megaphone.svg" alt="" />Please contact <strong><a href="mailto:IITA-SDITSA@cgiar.org">IITA-SDITSA@cgiar.org</a></strong> if appraiser information is missing or incorrect.
+            </p>
+          </div>
+          <div class="content-2-1">
+            <!-- Placeholder: user info and relevant div's -->
+            <div class="account-info">
+              <h3>Your Account Info</h3>
+              <div class="account-details">
+                <div class="labels">
+                  <p>Username:</p>
+                  <p>Registered e-mail address:</p>
+                  <p>Last name:</p>
+                  <p>First name:</p>
+                  <p>Staff ID:</p>
+                </div>
+                <div class="values">
+                  <p>ADEMOLA Patrick</p>
+                  <p>adepatrick@cgiar.org</p>
+                  <p>ADEMOLA</p>
+                  <p>Patrick</p>
+                  <p>E3ADEPAT</p>
+                </div>
+              </div>
+            </div>
+            <div class="supervising a-tag-pri">
+              <h3>Supervising</h3>
+              <p>You are viewing your own records.</p>
+              <p>Go to list of <a href="">scientists you supervise</a></p>
+              <p>Go to list of <a href="">irs you supervise</a></p>
+              <p>Go to list of <a href="">p4d you supervise</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content content-3">
+          <h2>Annual Reports</h2>
+          <p>Annual Reports displays data from Pro MIS, TA, and other databases. To keep your data up-to-date, contact services responsible for those databases.</p>
+          <div class="reports a-tag-pri">
+            <div>
+              <h4>ProMIS</h4>
+              <ul>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Proposals</a></li>
+                <li><a href="">CN</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Other</h4>
+              <ul>
+                <li><a href="">Workplan report</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cost centers</a></li>
+                <li class="bold"><a href="">Additional!</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Bibliography</h4>
+              <ul>
+                <li><a href="">Bib</a></li>
+                <li><a href="">Pre-bib</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Training</h4>
+              <ul>
+                <li><a href="">Trainees</a></li>
+                <li><a href="">Training Program</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <h2>Annual Workplan</h2>
+          <div class="a-tag-pri">
+            <ul>
+              <li><a href=""> R4D Workplan </a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-logos">
+            <img src="assets/IITA-logo.gif" alt="IITA logo" />
+            <img src="assets/PAR-logo.svg" alt="PAR Logo" />
+          </div>
+          <div class="help-div">
+            <h2>Need help with something?</h2>
+            <p>
+              Check out our <strong><a href="">FAQ Page</a></strong> for answers to common questions.
+            </p>
+            <p>
+              Or contact <strong><a href="mailto:IITA-SDITSA@cgiar.org">IITA-SDITSA@cgiar.org</a></strong> for help.
+            </p>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
