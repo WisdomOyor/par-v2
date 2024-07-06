@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/custom-styles.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css" />
     <link rel="icon" href="assets/IITA-logo-01.svg" />
 
     <script>
@@ -50,7 +49,7 @@
     <!-- Main Content Area -->
     <div class="main-content-area">
       <!-- Sidebar -->
-      <aside class="sidebar" data-title="Navigate with Ease" data-intro="This sidebar is your main navigation hub. Here you can access various sections such as Appraisee, Appraiser, Quick Access, and Support. Explore each section to manage your tasks effectively.">
+      <aside class="sidebar">
         <nav>
           <ul class="admin">
             <p class="dropdown-toggle">Admin Section <i class="fa-solid fa-chevron-down"></i></p>
@@ -73,8 +72,8 @@
           <ul class="appraisee">
             <p>Appraisee Section</p>
             <a href="nrs-workplan.html"><li>My Workplan</li></a>
-            <a href="nrs-appraisals.html"><li>My Appraisals</li></a>
-            <a href="nrs-viewpdfs.html"><li>View/Download my PDFs</li></a>
+            <a href=""><li>My Appraisals</li></a>
+            <a href="#"><li>View/Download my PDFs</li></a>
             <a href="#"><li>Manage Achievements</li></a>
           </ul>
           <ul class="appraiser">
@@ -96,9 +95,6 @@
             <p>Support</p>
             <a href="#"
               ><li><i class="fa-sharp fa-regular fa-envelope"></i>Contact IT Support</li></a
-            >
-            <a class="take-a-tour-button"
-              ><li><i class="fa-solid fa-route"></i>Take a Tour</li></a
             >
             <a href="#"
               ><li><i class="fa-regular fa-circle-question"></i>FAQ's</li></a
@@ -163,24 +159,24 @@
           <p class="announcement">Please take note: Database is refreshed every 24 hours. After updating your records in the other systems, the changes may not immediately display in this application.</p>
         </div>
 
-        <div class="content" data-title="Not sure where to start?" data-intro="Here you can choose from various actions to manage your workplan, appraisals, PDFs, and achievements.">
+        <div class="content">
           <h2>I would like to...</h2>
           <div class="dashboard-actions">
-            <a href="nrs-workplan.html">
+            <a href="">
               <div>
                 <div class="icon-div flex-center"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
                 <h4>Upload my Workplan</h4>
                 <p>Submit your workplan for review and appraisal.</p>
               </div>
             </a>
-            <a href="nrs-appraisals.html">
+            <a href="">
               <div>
                 <div class="icon-div flex-center"><i class="fa-solid fa-file-pen"></i></div>
                 <h4>Manage my Appraisals</h4>
                 <p>Review and respond to your appraisals.</p>
               </div>
             </a>
-            <a href="nrs-viewpdfs.html">
+            <a href="">
               <div>
                 <div class="icon-div flex-center"><i class="fa-solid fa-file-pdf"></i></div>
                 <h4>View or Download PDFs</h4>
@@ -231,25 +227,59 @@
               <p>Go to list of <a href="">irs you supervise</a></p>
               <p>Go to list of <a href="">p4d you supervise</a></p>
             </div>
-            <div class="supervising a-tag-pri">
-              <h3>Your Appraiser</h3>
+          </div>
+        </div>
+
+        <div class="content content-3">
+          <h2>Annual Reports</h2>
+          <p>Annual Reports displays data from Pro MIS, TA, and other databases. To keep your data up-to-date, contact services responsible for those databases.</p>
+          <div class="reports a-tag-pri">
+            <div>
+              <h4>ProMIS</h4>
               <ul>
-                <li><strong>David</strong>, Smith</li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Proposals</a></li>
+                <li><a href="">CN</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Other</h4>
+              <ul>
+                <li><a href="">Workplan report</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cost centers</a></li>
+                <li class="bold"><a href="">Additional!</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Bibliography</h4>
+              <ul>
+                <li><a href="">Bib</a></li>
+                <li><a href="">Pre-bib</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Training</h4>
+              <ul>
+                <li><a href="">Trainees</a></li>
+                <li><a href="">Training Program</a></li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="content a-tag-pri">
-          <h2>NRS Workplan</h2>
-          <p>
-            Please enter your <strong><a href="nrs-workplan.html">Workplan</a></strong
-            >.
-          </p>
+        <div class="content">
+          <h2>Annual Workplan</h2>
+          <div class="a-tag-pri">
+            <ul>
+              <li><a href=""> R4D Workplan </a></li>
+            </ul>
+          </div>
         </div>
 
         <!-- Footer -->
-        <footer class="footer" data-title="Need help with something?" data-intro="Reach out to us. We're here to assist you.">
+        <footer class="footer">
           <div class="flex-center footer-logos">
             <img src="assets/IITA-logo-1.png" alt="IITA logo" />
             <img src="assets/PAR-logo.svg" alt="PAR Logo" />
@@ -267,7 +297,6 @@
       </section>
     </div>
   </body>
-  <script src="https://unpkg.com/intro.js/intro.js"></script>
   <script>
     // Code for dropdown menu
     // Select the dropdown toggle element
@@ -281,11 +310,6 @@
         dropdownContent.classList.toggle("active");
         icon.classList.toggle("rotated");
       }, 100);
-    });
-
-    // // Attach click event listener to 'Take a Tour' button
-    document.querySelector(".take-a-tour-button").addEventListener("click", function () {
-      introJs().start();
     });
   </script>
 </html>

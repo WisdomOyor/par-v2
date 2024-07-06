@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/custom-styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="assets/IITA-logo-01.svg" />
+    <!-- For Year Picker -->
+    <!-- <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="css/yearpicker.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>Review Appraisal | PAR</title>
+  </head>
+  <body>
+    <!-- Main Content Area -->
+    <div class="main-content-area">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav>
+          <ul class="appraisee">
+            <p>Appraisee Section</p>
+            <a href="nrs-workplan.html"><li>My Workplan</li></a>
+            <a href="#"><li class="active">My Appraisals</li></a>
+            <a href="nrs-viewpdfs.html"><li>View/Download my PDFs</li></a>
+            <a href="#"><li>Manage Achievements</li></a>
+          </ul>
+          <ul class="appraiser">
+            <p>Appraiser Section</p>
+            <a href="#"><li>Supervise</li></a>
+            <a href="#"><li>Manage NRS PG 1-6 Appraisal(s)</li></a>
+            <a href="#"><li>Manage NRS PG 7-15 Appraisal(s)</li></a>
+            <a href="#"><li>Manage R4D Appraisal(s)</li></a>
+          </ul>
+          <ul class="quick-access">
+            <p>Quick Access</p>
+            <a href="#"><li>My Learning</li></a>
+            <a href="#"><li>DOIs</li></a>
+          </ul>
+          <ul class="support">
+            <p>Support</p>
+            <a href="#"
+              ><li><i class="fa-sharp fa-regular fa-envelope"></i>Contact IT Support</li></a
+            >
+            <a href="#"
+              ><li><i class="fa-regular fa-circle-question"></i>FAQ's</li></a
+            >
+            <a href="#">
+              <li>
+                <div class="feedback-div">
+                  <i class="fa-regular fa-comment-dots"></i>Help us make PAR better
+                  <div class="feedback-image-div">
+                    <img src="assets/par-mockup-1.png" alt="PAR Mockup" />
+                    <p>Share your feedback</p>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a href="login.html"
+              ><li><i class="fa-solid fa-arrow-right-to-bracket"></i>Logout</li></a
+            >
+          </ul>
+
+          <div class="user-profile">
+            <!-- Placeholder: user info: image, name, category -->
+            <img src="assets/user-image.png" alt="" class="user-image" />
+            <div class="user-info">
+              <p class="user-name">ADEMOLA Patrick</p>
+              <p class="user-category">NRS Professional</p>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Content Area -->
+      <section class="content-area">
+        <!-- Header -->
+        <header class="header">
+          <div class="flex-center header-logos">
+            <img class="iita-logo header-logo" src="assets/IITA-logo-1.png" alt="IITA logo" />
+            <img src="assets/PAR-logo.svg" alt="PAR Logo" class="par-logo" />
+          </div>
+          <nav class="header-nav">
+            <!-- Placeholder: ONLY the current page should have the class "active". -->
+            <a href="index.html"><p>Dashboard</p></a>
+            <a href="#"><p>Delegate</p></a>
+            <a href="#"><p>Bug</p></a>
+            <a href="#"><p>Help</p></a>
+            <a href="login.html"><p>Logout</p></a>
+          </nav>
+        </header>
+
+        <div class="content content-header">
+          <div class="header-info">
+            <h2>My Appraisals - Review Appraisal</h2>
+            <p>NRS Appraisals</p>
+            <table>
+              <tr>
+                <th>Username:</th>
+                <td>ADEMOLA Patrick</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="padding-2rem-lr main-div content flex flex-column flex-start">
+          <div class="width-100 flex flex-btw border-btm-g">
+            <h2>2024 Appraisal for ADEMOLA Patrick</h2>
+            <div class="year-picker-div">
+              <span>Workplan Year:</span>
+              <div class="relative inline"><input type="text" class="box-shadow yearpicker" value="" readonly /></div>
+            </div>
+          </div>
+          <table class="main-table">
+            <tr>
+              <td><h2>PART I</h2></td>
+              <td>
+                <h2>Demographics</h2>
+                <table class="nested-table">
+                  <tr>
+                    <th>Unit / Project:</th>
+                    <td>PPS</td>
+                  </tr>
+                  <tr>
+                    <th>Name:</th>
+                    <td>ADEMOLA Patrick</td>
+                  </tr>
+                  <tr>
+                    <th>Position Title:</th>
+                    <td>Project Supervisor, PPS</td>
+                  </tr>
+                  <tr>
+                    <th>PG:</th>
+                    <td>Null</td>
+                  </tr>
+                  <tr>
+                    <th>Country Station:</th>
+                    <td>Nigeria</td>
+                  </tr>
+                  <tr>
+                    <th>Supervisor:</th>
+                    <td>DAVID Smith D08S21</td>
+                  </tr>
+                  <tr>
+                    <th>Last modified:</th>
+                    <td>KOraegbunam, 30/01/2019</td>
+                  </tr>
+                  <tr>
+                    <th>State:</th>
+                    <td>PENDING</td>
+                  </tr>
+                  <tr>
+                    <th>Final score:</th>
+                    <td>0.0</td>
+                  </tr>
+                  <tr>
+                    <th>Rating Summary:</th>
+                    <td>Undefined</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+                <td><h2>PART II</h2></td>
+                <td>
+                  <h2>Appraisal Rating</h2>
+                  <p class="bold">Description</p>
+                  <table class="nested-table">
+                    <tr>
+                      <th>Unit / Project:</th>
+                      <td>PPS</td>
+                    </tr>
+                    <tr>
+                      <th>Name:</th>
+                      <td>ADEMOLA Patrick</td>
+                    </tr>
+                    <tr>
+                      <th>Position Title:</th>
+                      <td>Project Supervisor, PPS</td>
+                    </tr>
+                    <tr>
+                      <th>PG:</th>
+                      <td>Null</td>
+                    </tr>
+                    <tr>
+                      <th>Country Station:</th>
+                      <td>Nigeria</td>
+                    </tr>
+                    <tr>
+                      <th>Supervisor:</th>
+                      <td>DAVID Smith D08S21</td>
+                    </tr>
+                    <tr>
+                      <th>Last modified:</th>
+                      <td>KOraegbunam, 30/01/2019</td>
+                    </tr>
+                    <tr>
+                      <th>State:</th>
+                      <td>PENDING</td>
+                    </tr>
+                    <tr>
+                      <th>Final score:</th>
+                      <td>0.0</td>
+                    </tr>
+                    <tr>
+                      <th>Rating Summary:</th>
+                      <td>Undefined</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+          </table>          
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="flex-center footer-logos">
+            <img src="assets/IITA-logo-1.png" alt="IITA logo" />
+            <img src="assets/PAR-logo.svg" alt="PAR Logo" />
+          </div>
+          <div class="help-div">
+            <h2>Need help with something?</h2>
+            <p>
+              Check out our <strong><a href="">FAQ Page</a></strong> for answers to common questions.
+            </p>
+            <p>
+              Or contact <strong><a href="mailto:IITA-SDITSA@cgiar.org">IITA-SDITSA@cgiar.org</a></strong> for help.
+            </p>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+  <script src="js/yearpicker.js"></script>
+  <script>
+    $(".yearpicker").yearpicker();
+  </script>
+</html>

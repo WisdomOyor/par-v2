@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom-styles.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="assets/IITA-logo-01.svg" />
+    <title>Login Page | PAR</title>
+  </head>
+  <body>
+    <!-- Placeholder: background-image -->
+    <div class="div-bg flex-center login-page" style="background-image: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+      <div class="main-section">
+        <div class="flex-center flex-column left">
+          <div class="left-div-1">
+            <img src="assets/IITA-logo-1.png" alt="" />
+            <img class="par-logo" src="assets/PAR-logo.svg" alt="">
+          </div>
+          <div class="flex-center left-div-2">
+            <img src="assets/example-img-01.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <h1>Login</h1>
+          <p><strong>Note:</strong> Use your Domain Network Account.</p>
+          <div class="input-section">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-container">
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required />
+                  <i class="fa-solid fa-eye" id="togglePassword"></i>
+                </div>
+              </div>
+              <button type="submit">Login</button>
+            </form>
+          </div>
+          <div class="help-div">
+            <p>
+              If you encounter any issues, please contact <strong><a href="mailto:IITA-SDITSA@cgiar.org">IITA-SDITSA@cgiar.org</a>.</strong>
+            </p>
+            <p><a href="index.html">Back Home</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const togglePassword = document.getElementById("togglePassword");
+    const password = document.getElementById("password");
+
+    togglePassword.addEventListener("click", function (e) {
+      // toggle the type attribute
+      const type = password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+      // toggle the eye / eye-slash icon
+      this.classList.toggle("fa-eye");
+      this.classList.toggle("fa-eye-slash");
+    });
+  </script>
+</html>
